@@ -22,7 +22,7 @@
 
 ## POPL Aspects
   ### Memory Management
-   * [n_net.rs](./code-orig/n_net.rs)
+   * [`n_net.rs`](./code-orig/n_net.rs)
      
         ```RUST
         let mut X_train: Vec<(f64, f64)> = Vec::new();
@@ -30,7 +30,7 @@
         // ... (similar declarations for other variables)
         ```
         Rust's ownership model ensures that memory is managed efficiently and safely by tracking ownership and enforcing strict rules about borrowing and mutability, thereby preventing issues like memory leaks or data races.
-   * `dot_product.rs`
+   * [`dot_product.rs`](./code-orig/dot_product.rs)
      
         ```RUST
         for i in 0..v1.len() {
@@ -39,7 +39,7 @@
         ```
         The loop in the dot_product function accesses elements of v1 and v2 without bounds checking, relying on Rust's memory safety guarantees through slice references.
   ### Ownership 
-   * `n_net.rs`
+   * [`n_net.rs`](./code-orig/n_net.rs)
      
        ```RUST
        fn sigmoid(x: f64) -> f64 {
@@ -55,7 +55,7 @@
 
 ### Error Handling 
 
-   * `dot_product.rs`
+   * [`dot_product.rs`](./code-orig/dot_product.rs)
      
      ```RUST
      if v1.len() != v2.len() {
@@ -64,7 +64,7 @@
 
      ```
      The function dot_product checks for vector dimension mismatch and panics with an error message if the lengths of the input vectors are not equal.
-   * `error_handling.rs`
+   * [`error_handling.rs`](./code-orig/error_handling.rs)
      
      ```RUST
      enum MathError {
@@ -74,14 +74,14 @@
      MathError is used to define specific error cases that might occur during mathematical operations. In this case, the specific error case is DivisionByZero, which indicates an attempt to divide by zero, an operation that is mathematically invalid.
 
 ### Static Typing
-   * `matmul_dim.rs`
+   * [`matmul_dim.rs`](./code-orig/matmul_dim.rs)
      
      ```RUST
      let matrix_a: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
      let matrix_b: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
      ```
      The types of matrix_a and matrix_b are explicitly declared as Array2<f64>. This ensures type safety at compile time.
-   * `dot_product.rs`
+   * [`dot_product.rs`](./code-orig/dot_product.rs)
      
      ```RUST
       fn dot_product(v1: &[f64], v2: &[f64]) -> f64 {
@@ -92,14 +92,14 @@
        
  
  ### Immutability
-  * `matmul_dim.rs`
+  * [`matmul_dim.rs`](./code-orig/matmul_dim.rs)
     
       ```RUST
       let matrix_a: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
       let matrix_b: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
       ```
       Variables matrix_a and matrix_b are immutable after initialization. This adheres to Rust's ownership model, promoting safety and preventing unintended modifications.
- * `dot_product.rs`
+ * [`dot_product.rs`](./code-orig/dot_product.rs)
    
       ```RUST
       let result = dot_product(&v1, &v2);  // Compile-time error due to dimensions mismatch
@@ -107,7 +107,7 @@
       In main(), vectors v1 and v2 are immutable by default. Attempting to pass immutable references to dot_product enforces immutability.
 
   ### Borrowing
-   * `n_net.rs`
+   * [`n_net.rs`](./code-orig/n_net.rs)
        ```RUST
        let mut weights_input_hidden = vec![vec![rng.gen::<f64>(); hidden_size]; input_size];
        let mut biases_hidden = vec![rng.gen::<f64>(); hidden_size];
