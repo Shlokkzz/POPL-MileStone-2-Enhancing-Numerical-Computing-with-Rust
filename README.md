@@ -2,7 +2,8 @@
 
 ## Problem Statement
 
-![Python-vs -Rust](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/dd58eef2-2714-4bef-bd92-ef51ca76a273)
+![Python-vs -Rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/7eae0d54-142b-44da-b516-cfeb0957bb7e)
+
 
 * The goal of this project is to optimize numerical and `scientific computing`.  
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
@@ -10,7 +11,8 @@
 
 ## Software architecture
 
-<img width="765" alt="Screenshot 2023-11-20 at 1 52 08 AM" src="https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/106c6915-c6a2-4d74-803e-26f53e8399e7">
+<img width="765" alt="Screenshot 2023-11-20 at 1 52 08 AM" src="https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/19b96bb1-9b4c-4533-950d-ff0af53cdb27">
+
 
 
 * Unit Tests: Writing tests for individual components to ensure their functionality.
@@ -126,9 +128,9 @@
 * Lines of code is not considered a feasible measure because the number of lines is almost the same, with differences being due to the differing formatters of each language.
 
 ## `PYTHON->`  
-![python](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/4e3c5696-be7e-4d74-8fdc-fa174b636195)
+![python](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/3d0ade3e-e838-42c9-bed3-130ed0174fd1)
 ## `RUST->`  
-  ![rust](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/ea5e63ce-bd51-4467-81e5-39c0a7c96611)
+![rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/52e40649-7998-41f7-b60d-72fef550d6b1)
 
 
 * In the experiments, the parameters to the algorithm are built-into the library, which reduces reliability of the measurements for both the Python and the transpiled Rust implementations.  
@@ -137,7 +139,7 @@
 * Multiple manual implementations of expressions (< 1 % of all expressions) were required though each was straightforward with output from the Rust compiler.  
 
 ## `Graph`
-![photo_2023-11-20_00-51-38](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/2bb3c037-a5dd-4a2b-8f74-4a1e61e15207)  
+![photo_2023-11-20_00-51-38](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/a3b4f3ce-654b-4a65-bf46-73b238cfa9a2)
 Size | RUST(s) | PYTHON(S)
 | :--- | ---: | :---:
 100        | 0.00612 | 0.190281
