@@ -125,11 +125,11 @@
 * We also consider what processes transpiled sources now allow.   
 * Lines of code is not considered a feasible measure because the number of lines is almost the same, with differences being due to the differing formatters of each language.
 
+## `PYTHON->`  
+![python](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/4e3c5696-be7e-4d74-8fdc-fa174b636195)
 ## `RUST->`  
   ![rust](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/ea5e63ce-bd51-4467-81e5-39c0a7c96611)
 
-## `PYTHON->`  
-![python](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/4e3c5696-be7e-4d74-8fdc-fa174b636195)
 
 * In the experiments, the parameters to the algorithm are built-into the library, which reduces reliability of the measurements for both the Python and the transpiled Rust implementations.  
 * Measurements were taken with careful examination of allocations and verification of produced outputs.  
