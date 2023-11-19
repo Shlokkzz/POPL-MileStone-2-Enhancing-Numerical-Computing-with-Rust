@@ -1,6 +1,8 @@
 # Enhancing Numerical Computing with Rust
 
 ## Problem Statement
+![Python-vs -Rust](https://github.com/Shlokkzz/POPL-MileStone2/assets/101893296/dd58eef2-2714-4bef-bd92-ef51ca76a273)
+
 * The goal of this project is to optimize numerical and `scientific computing`.  
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
 * This project brings the advantages of Rust to the data science and scientific computing community while maintaining compatibility with existing Python-based workflows.
