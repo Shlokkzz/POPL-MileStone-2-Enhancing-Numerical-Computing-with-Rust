@@ -2,7 +2,7 @@
 
 ## Problem Statement
 * The goal of this project is to optimize numerical and `scientific computing`.  
-* Currently, Numpy is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
+* Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
 * This project brings the advantages of Rust to the data science and scientific computing community while maintaining compatibility with existing Python-based workflows.
 
 ## Software architecture
@@ -20,6 +20,7 @@
 ## POPL Aspects
   ### Memory Management
    * `n_net.rs`
+     
         ```RUST
         let mut X_train: Vec<(f64, f64)> = Vec::new();
         let mut y_train: Vec<i32> = Vec::new();
@@ -27,6 +28,7 @@
         ```
         Rust's ownership model ensures that memory is managed efficiently and safely by tracking ownership and enforcing strict rules about borrowing and mutability, thereby preventing issues like memory leaks or data races.
    * `dot_product.rs`
+     
         ```RUST
         for i in 0..v1.len() {
             result += v1[i] * v2[i];
@@ -34,7 +36,8 @@
         ```
         The loop in the dot_product function accesses elements of v1 and v2 without bounds checking, relying on Rust's memory safety guarantees through slice references.
   ### Ownership 
-   * `n_net.rs` 
+   * `n_net.rs`
+     
        ```RUST
        fn sigmoid(x: f64) -> f64 {
        // ...
@@ -50,6 +53,7 @@
 ### Error Handling 
 
    * `dot_product.rs`
+     
      ```RUST
      if v1.len() != v2.len() {
          panic!("Vector dimensions do not match for dot product.");
@@ -58,6 +62,7 @@
      ```
      The function dot_product checks for vector dimension mismatch and panics with an error message if the lengths of the input vectors are not equal.
    * `error_handling.rs`
+     
      ```RUST
      enum MathError {
        DivisionByZero,
@@ -67,12 +72,14 @@
 
 ### Static Typing
    * `matmul_dim.rs`
+     
      ```RUST
      let matrix_a: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
      let matrix_b: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
      ```
      The types of matrix_a and matrix_b are explicitly declared as Array2<f64>. This ensures type safety at compile time.
    * `dot_product.rs`
+     
      ```RUST
       fn dot_product(v1: &[f64], v2: &[f64]) -> f64 {
        // ...
@@ -83,12 +90,14 @@
  
  ### Immutability
   * `matmul_dim.rs`
+    
       ```RUST
       let matrix_a: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
       let matrix_b: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
       ```
       Variables matrix_a and matrix_b are immutable after initialization. This adheres to Rust's ownership model, promoting safety and preventing unintended modifications.
  * `dot_product.rs`
+   
       ```RUST
       let result = dot_product(&v1, &v2);  // Compile-time error due to dimensions mismatch
       ```
