@@ -22,7 +22,7 @@
 
 ## POPL Aspects
   ### Memory Management
-   * `n_net.rs`
+   * [n_net.rs](./code-orig/n_net.rs)
      
         ```RUST
         let mut X_train: Vec<(f64, f64)> = Vec::new();
