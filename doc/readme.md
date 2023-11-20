@@ -18,7 +18,7 @@
 * Unit Tests: Writing tests for individual components to ensure their functionality.
 * Integration and End-to-End Tests: Verifying the interactions and behaviors between components and the system as a whole.
 
-* Testing component is placed locally and there is no databased invloved.  
+* Testing component is placed locally and there is no database invloved.  
 
 
 
