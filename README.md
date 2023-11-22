@@ -199,6 +199,6 @@ In this performance comparison between Rust and Python for processing different 
 
 ## Potential for future work
 * Using rust’s concurrency features to improve neural network performance.
-* Testing neural network performance for rust on other datasets.
+* Testing neural network performance for rust on various datasets.
 
 
