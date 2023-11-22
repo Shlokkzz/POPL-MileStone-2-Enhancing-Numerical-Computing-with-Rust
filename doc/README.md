@@ -206,8 +206,13 @@ The results below are generated using VTune application.
 * In the experiments, the parameters to the algorithm are built-into the library, which reduces reliability of the measurements for both the Python and the transpiled Rust implementations.  
 * Measurements were taken with careful examination of allocations and verification of produced outputs.  
 * After automatic syntax conversion, we used regular expressions extensively to fix remaining errors and library references.  
-* Multiple manual implementations of expressions (< 1 % of all expressions) were required though each was straightforward with output from the Rust compiler.  
+* Multiple manual implementations of expressions (< 1 % of all expressions) were required though each was straightforward with output from the Rust compiler.
+* We consider the results of transpilation in wall clock time, memory consumption, and complexity in terms of issues encountered and regularity for potential automation.  
+* We also consider what processes transpiled sources now allow.   
+* Lines of code is not considered a feasible measure because the number of lines is almost the same, with differences being due to the differing formatters of each language.
 
 ## Potential for future work
 * Using rust’s concurrency features to improve neural network performance.
 * Testing neural network performance for rust on various datasets.
+
+
