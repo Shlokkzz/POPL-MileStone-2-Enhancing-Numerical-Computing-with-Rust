@@ -1,0 +1,14 @@
+[package]
+name = "POPL"  # The name of your project (it should match your folder name)
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+rand = "0.8"
+rayon = "1.5"
+ndarray = "0.15.4"
+csv = "1.0"
+
+[[bin]]
+name = "matmul_dim"
+path = "matmul_dim.rs"
