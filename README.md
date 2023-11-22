@@ -11,6 +11,7 @@
     * [Neural Network](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/n_net.rs)
     * [K-Means](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/c93796bbbc88c69c320396fec80fc4635bfee8dd/code-orig/kmeans.rs)
     * [Matrix Multiplication](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/matmul_dim.rs)
+    * [Matrix Addition](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/5cf1195425704781a8728f88bb2cc590127c06f6/code-orig/matadd.rs)
     * [Dot Product](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/dot_product.rs)
     * [Error Handling](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/error_handling.rs)
 
@@ -67,6 +68,9 @@
 
 
 ## POPL Aspects
+
+![1_EuZq8pY0myxQUqTExy1XeA](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/125542ec-5ba5-414b-835c-bab3d9ac030a)
+
   ### 1. Memory Management
    * [Neural Network](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/n_net.rs)
      
@@ -171,27 +175,31 @@ We first begin our evaluation by testing the time taken by the code written in r
 
 We first test it out for the matrix multiplication code:
 
-## Graph:-
-![photo_2023-11-20_00-51-38](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/a3b4f3ce-654b-4a65-bf46-73b238cfa9a2)
+## Graph:- 
+### Matrix Multiplication
+![matrix multi](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/c06ad351-8a9e-4d05-b7cc-f842799fd44f)
+
 
 This is the graph which represent time vs size of [Matrix Multiplication](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/matmul_dim.rs) operations.  
 Y-axis represents time taken in seconds(s) and X-axis represents the size of the matrix. For example size=100 means a matrix with dimension 100x100.
-Size | RUST(s) | PYTHON(s)
-| :--- | ---: | :---:
-100        | 0.00612 | 0.190281
-200          | 0.02204 | 1.566
-300        | 0.06956 | 5.75
-400          | 0.15942 | 13.24
-500          | 0.31405 | 24.7
+
+### Matrix Addition
+![Picture3](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/284f104b-4e99-45c9-8b75-4690a4c88f49)
+
+This is the graph which represent time vs size of [Matrix Addition](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/5cf1195425704781a8728f88bb2cc590127c06f6/code-orig/matadd.rs) operations.
+Y-axis represents time taken in seconds(s) and X-axis represents the size of the matrix. For example size=100 means a matrix with dimension 100x100.
+
 
 In this performance comparison between Rust and Python for processing different data sizes, Rust consistently demonstrates significantly lower execution times across varying data sizes, showcasing its superior efficiency and speed compared to Python for these computational tasks.
+
+## Profiling
 
 We now proceed towards profiling. This is done to test which code is more efficiently using the computer hardware.
 
 The results below are generated using VTune application.  
-## Python:- 
+### Python:- 
 ![python](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/3d0ade3e-e838-42c9-bed3-130ed0174fd1)
-## Rust:-
+### Rust:-
 ![rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/52e40649-7998-41f7-b60d-72fef550d6b1)
 
 
