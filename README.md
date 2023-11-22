@@ -8,8 +8,9 @@
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
 * This project brings the advantages of Rust to the data science and scientific computing community.
 * We initially started off by writing rust code for small elements of large algorithms such as matrix multiplication, matrix inverse calculation and dot product and comparing them with python code. We then moved on to implement larger algorithms, which are, neural network and kmeans clustering. We have used various Rust vs Python comparisons on the basis of performance and memory management using the files:
-    * [Matrix Multiplication](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/matmul_dim.rs)
     * [Neural Network](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/n_net.rs)
+    * [K-Means](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/c93796bbbc88c69c320396fec80fc4635bfee8dd/code-orig/kmeans.rs)
+    * [Matrix Multiplication](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/matmul_dim.rs)
     * [Dot Product](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/dot_product.rs)
     * [Error Handling](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/error_handling.rs)
 
