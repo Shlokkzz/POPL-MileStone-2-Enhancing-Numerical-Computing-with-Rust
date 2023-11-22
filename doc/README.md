@@ -6,10 +6,11 @@
 
 * The goal of this project is to optimize numerical and `scientific computing`.  
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
-* This project brings the advantages of Rust to the data science and scientific computing community while maintaining compatibility with existing Python-based workflows.
-* We have used various Rust vs Python comparisons on the basis of performance and memory management using the files:
-    * [Matrix Multiplication](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/matmul_dim.rs)
+* This project brings the advantages of Rust to the data science and scientific computing community.
+* We initially started off by writing rust code for small elements of large algorithms such as matrix multiplication, matrix inverse calculation and dot product and comparing them with python code. We then moved on to implement larger algorithms, which are, neural network and kmeans clustering. We have used various Rust vs Python comparisons on the basis of performance and memory management using the files:
     * [Neural Network](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/n_net.rs)
+    * [K-Means](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/c93796bbbc88c69c320396fec80fc4635bfee8dd/code-orig/kmeans.rs)
+    * [Matrix Multiplication](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/matmul_dim.rs)
     * [Dot Product](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/dot_product.rs)
     * [Error Handling](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/blob/259e61b08cec4b3dc2dbe0c425f1d91d146e5d09/code-orig/error_handling.rs)
 
@@ -18,11 +19,8 @@
 <img width="765" alt="Screenshot 2023-11-20 at 1 52 08 AM" src="https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/19b96bb1-9b4c-4533-950d-ff0af53cdb27">
 
 
-
-* Unit Tests: Writing tests for individual components to ensure their functionality.
-* Integration and End-to-End Tests: Verifying the interactions and behaviors between components and the system as a whole.
-
-* Testing component is placed locally and there is no database involved.  
+* We have written codes in both python and rust languages. Our neural network code consists of forward and backward propagation steps within a training loop, measuring training time and evaluating accuracy on a test dataset.
+* We have tested the performance based on time taken to complete execution, accuracy and then we have done profiling for the matmul code to test the interaction of the python and rust codes with the computer hardware. There is no database involved.  
 
 ## How to Compile and Run the project
   ### Python
@@ -65,7 +63,7 @@
   
   4. #### `Run the Compiled Binary`
       * After successful compilation, the binary will be available in the target/debug directory (for development build).
-      * Run the binary by executing target/debug/matmul_dim in the terminal.
+      * Run the binary by executing target/debug/matmul_dim in the terminal by executing the command cargo run.
 
 
 ## POPL Aspects
@@ -202,6 +200,6 @@ In this performance comparison between Rust and Python for processing different 
 
 ## Potential for future work
 * Using rust’s concurrency features to improve neural network performance.
-* Testing neural network performance for rust on other datasets.
+* Testing neural network performance for rust on various datasets.
 
 
