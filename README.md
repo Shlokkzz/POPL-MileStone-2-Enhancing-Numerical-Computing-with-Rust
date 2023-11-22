@@ -184,7 +184,9 @@ Size | RUST(s) | PYTHON(s)
 400          | 0.15942 | 13.24
 500          | 0.31405 | 24.7
 
-In this performance comparison between Rust and Python for processing different data sizes, Rust consistently demonstrates significantly lower execution times across varying data sizes, showcasing its superior efficiency and speed compared to Python for these computational tasks.  
+In this performance comparison between Rust and Python for processing different data sizes, Rust consistently demonstrates significantly lower execution times across varying data sizes, showcasing its superior efficiency and speed compared to Python for these computational tasks.
+
+We now proceed towards profiling. This is done to test which code is more efficiently using the computer hardware.
 
 The results below are generated using VTune application.  
 ## Python:- 
