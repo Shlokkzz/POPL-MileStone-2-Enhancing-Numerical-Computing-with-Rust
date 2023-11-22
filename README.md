@@ -8,10 +8,10 @@
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
 * This project brings the advantages of Rust to the data science and scientific computing community while maintaining compatibility with existing Python-based workflows.
 * We have used various Rust vs Python comparisons on the basis of performance and memory management using the files:
-    * [`Matrix Multiplication`](code-orig/matmul_dim.rs)
-    * [`Neural Network`](code-orig/n_net.rs)
-    * [`Dot Product`](code-orig/dot_product.rs)
-    * [`Error Handling`](code-orig/error_handling.rs)
+    * [Matrix Multiplication](code-orig/matmul_dim.rs)
+    * [Neural Network](code-orig/n_net.rs)
+    * [Dot Product](code-orig/dot_product.rs)
+    * [Error Handling](code-orig/error_handling.rs)
 
 ## Software architecture
 
@@ -31,12 +31,12 @@
 
   1. #### `Install Rust`
       If Rust isn't installed, use rustup, a toolchain manager for Rust.
-      Follow the instructions on [`Rust's official website`](https://www.rust-lang.org/tools/install) to install it.
+      Follow the instructions on [Rust's official website](https://www.rust-lang.org/tools/install) to install it.
   2. #### `Project Setup`
      
-      Edit the following changes in the [`Cargo.toml`](code-orig/Cargo.toml) file
+      Edit the following changes in the [Cargo.toml](code-orig/Cargo.toml) file
       * Change the name to the folder name. Also you can edit the version too.  
-         ```RUST
+         ```sh
           [package]
           name = "POPL"  # The name of your project (it should match your folder name)
           version = "0.1.0"
@@ -69,8 +69,8 @@
 
 
 ## POPL Aspects
-  ### Memory Management
-   * [`Neural Network`](code-orig/n_net.rs)
+  ### 1. Memory Management
+   * [Neural Network](code-orig/n_net.rs)
      
         ```RUST
         let mut X_train: Vec<(f64, f64)> = Vec::new();
@@ -78,7 +78,7 @@
         // ... (similar declarations for other variables)
         ```
         Rust's ownership model ensures that memory is managed efficiently and safely by tracking ownership and enforcing strict rules about borrowing and mutability, thereby preventing issues like memory leaks or data races.
-   * [`Dot Product`](code-orig/dot_product.rs)
+   * [Dot Product](code-orig/dot_product.rs)
      
         ```RUST
         for i in 0..v1.len() {
@@ -86,8 +86,8 @@
         }
         ```
         The loop in the dot_product function accesses elements of v1 and v2 without bounds checking, relying on Rust's memory safety guarantees through slice references.
-  ### Ownership 
-   * [`Neural Network`](code-orig/n_net.rs)
+  ### 2. Ownership 
+   * [Neural Network](code-orig/n_net.rs)
      
        ```RUST
        fn sigmoid(x: f64) -> f64 {
@@ -101,9 +101,9 @@
       ```
       The mut keyword signifies mutable ownership. Variables like X_train, y_train, X_test, y_test, etc., are declared as mutable (mut), allowing changes to the data they hold.
 
-### Error Handling 
+### 3. Error Handling 
 
-   * [`Dot Product`](code-orig/dot_product.rs)
+   * [Dot Product](code-orig/dot_product.rs)
      
      ```RUST
      if v1.len() != v2.len() {
@@ -112,7 +112,7 @@
 
      ```
      The function dot_product checks for vector dimension mismatch and panics with an error message if the lengths of the input vectors are not equal.
-   * [`Error Handling`](code-orig/error_handling.rs)
+   * [Error Handling](code-orig/error_handling.rs)
      
      ```RUST
      enum MathError {
@@ -121,15 +121,15 @@
      ```
      MathError is used to define specific error cases that might occur during mathematical operations. In this case, the specific error case is DivisionByZero, which indicates an attempt to divide by zero, an operation that is mathematically invalid.
 
-### Static Typing
-   * [`Matrix Multiplication`](code-orig/matmul_dim.rs)
+### 4. Static Typing
+   * [Matrix Multiplication](code-orig/matmul_dim.rs)
      
      ```RUST
      let matrix_a: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
      let matrix_b: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
      ```
      The types of matrix_a and matrix_b are explicitly declared as Array2<f64>. This ensures type safety at compile time.
-   * [`Dot Product`](code-orig/dot_product.rs)
+   * [Dot Product](code-orig/dot_product.rs)
      
      ```RUST
       fn dot_product(v1: &[f64], v2: &[f64]) -> f64 {
@@ -139,23 +139,23 @@
      The function dot_product and its arguments v1 and v2 are explicitly typed as slices [f64], ensuring type safety.
        
  
- ### Immutability
-  * [`Matrix Multiplication`](code-orig/matmul_dim.rs)
+ ### 5. Immutability
+  * [Matrix Multiplication](code-orig/matmul_dim.rs)
     
       ```RUST
       let matrix_a: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
       let matrix_b: Array2<f64> = Array2::from_shape_fn((500, 500), |_| rng.sample(Uniform::new(0.0, 1.0)));
       ```
       Variables matrix_a and matrix_b are immutable after initialization. This adheres to Rust's ownership model, promoting safety and preventing unintended modifications.
- * [`Dot Product`](code-orig/dot_product.rs)
+ * [Dot Product](code-orig/dot_product.rs)
    
       ```RUST
       let result = dot_product(&v1, &v2);  // Compile-time error due to dimensions mismatch
       ```
       In main(), vectors v1 and v2 are immutable by default. Attempting to pass immutable references to dot_product enforces immutability.
 
-  ### Borrowing
-   * [`Neural Network`](code-orig/n_net.rs)
+  ### 6. Borrowing
+   * [Neural Network](code-orig/n_net.rs)
        ```RUST
        let mut weights_input_hidden = vec![vec![rng.gen::<f64>(); hidden_size]; input_size];
        let mut biases_hidden = vec![rng.gen::<f64>(); hidden_size];
@@ -174,9 +174,9 @@
 * Lines of code is not considered a feasible measure because the number of lines is almost the same, with differences being due to the differing formatters of each language.
 
 The results below are generated using VTune application.  
-## `PYTHON->`  
+## Python:- 
 ![python](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/3d0ade3e-e838-42c9-bed3-130ed0174fd1)
-## `RUST->`  
+## Rust:-
 ![rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/52e40649-7998-41f7-b60d-72fef550d6b1)
 
 
@@ -185,10 +185,10 @@ The results below are generated using VTune application.
 * After automatic syntax conversion, we used regular expressions extensively to fix remaining errors and library references.  
 * Multiple manual implementations of expressions (< 1 % of all expressions) were required though each was straightforward with output from the Rust compiler.  
 
-## `Graph`
+## Graph:-
 ![photo_2023-11-20_00-51-38](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/a3b4f3ce-654b-4a65-bf46-73b238cfa9a2)
 
-This is the graph which represent time vs size of [`matrix multiplication`](code-orig/matmul_dim.rs) operations.  
+This is the graph which represent time vs size of [Matrix Multiplication](code-orig/matmul_dim.rs) operations.  
 Y-axis represents time taken in seconds(s) and X-axis represents the size of the matrix. For example size=100 means a matrix with dimension 100x100.
 Size | RUST(s) | PYTHON(s)
 | :--- | ---: | :---:
