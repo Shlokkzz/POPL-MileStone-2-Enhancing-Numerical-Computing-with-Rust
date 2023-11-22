@@ -4,7 +4,7 @@
 
 ![Python-vs -Rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/7eae0d54-142b-44da-b516-cfeb0957bb7e)
 
-
+FILES ADD PLS
 * The goal of this project is to optimize numerical and `scientific computing`.  
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
 * This project brings the advantages of Rust to the data science and scientific computing community while maintaining compatibility with existing Python-based workflows.
@@ -20,6 +20,48 @@
 
 * Testing component is placed locally and there is no database involved.  
 
+## How to Compile and Run the project
+  ### Python
+  * Python code can be run using any code runner on any text editor like Visual Studio Code.
+  ### Rust
+
+  1. #### `Install Rust`
+      If Rust isn't installed, use rustup, a toolchain manager for Rust.
+      Follow the instructions on [`Rust's official website`](https://www.rust-lang.org/tools/install) to install it.
+  2. #### `Project Setup`
+     
+      Edit the following changes in the [`Cargo.toml`](./code-orig/Cargo.toml) file
+      * Change the name to the folder name. Also you can edit the version too.  
+         ```RUST
+          [package]
+          name = "POPL"  # The name of your project (it should match your folder name)
+          version = "0.1.0"
+          edition = "2018"
+        ```
+      * Add the required dependencies to your project.
+        Here we have included dependencies like rand, rayon, ndarray, etc.  
+        ```RUST
+          [dependencies]
+          rand = "0.8"
+          rayon = "1.5"
+          ndarray = "0.15.4"
+          csv = "1.0"
+        ```
+      * Change the file name and its path according to the file which you are executing.
+        ```RUST
+          [[bin]]
+          name = "matmul_dim"
+          path = "matmul_dim.rs"
+        ```
+      
+  3. #### `Build the Project`
+      * Open a terminal or command prompt.
+      * Navigate to your project directory using the cd command.
+      * Run cargo build to compile the project. This command downloads dependencies (if any) and compiles the project.
+  
+  4. #### `Run the Compiled Binary`
+      * After successful compilation, the binary will be available in the target/debug directory (for development build).
+      * Run the binary by executing ./target/debug/matmul_dim in the terminal.
 
 
 ## POPL Aspects
