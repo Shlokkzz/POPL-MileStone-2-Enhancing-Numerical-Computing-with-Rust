@@ -18,7 +18,7 @@
 * Unit Tests: Writing tests for individual components to ensure their functionality.
 * Integration and End-to-End Tests: Verifying the interactions and behaviors between components and the system as a whole.
 
-* Testing component is placed locally and there is no database invloved.  
+* Testing component is placed locally and there is no database involved.  
 
 
 
@@ -140,7 +140,10 @@
 
 ## `Graph`
 ![photo_2023-11-20_00-51-38](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/a3b4f3ce-654b-4a65-bf46-73b238cfa9a2)
-Size | RUST(s) | PYTHON(S)
+
+This is the graph which represent time vs size of [`matrix multiplication`](./code-orig/matmul_dim.rs) operations.  
+Y-axis represents time taken in seconds(s) and X-axis represents the size of the matrix. For example size=100 means a matrix with dimension 100x100.
+Size | RUST(s) | PYTHON(s)
 | :--- | ---: | :---:
 100        | 0.00612 | 0.190281
 200          | 0.02204 | 1.566
