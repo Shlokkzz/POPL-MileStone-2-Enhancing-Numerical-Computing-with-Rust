@@ -1,6 +1,6 @@
 # Enhancing Numerical Computing with Rust
 
-## Problem Statemen
+## Problem Statement
 
 ![Python-vs -Rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/7eae0d54-142b-44da-b516-cfeb0957bb7e)
 
