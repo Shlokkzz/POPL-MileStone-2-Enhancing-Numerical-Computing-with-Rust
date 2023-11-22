@@ -1,0 +1,13 @@
+The work for the project was distributed as follows:
+
+1) Nandan Surani & Shlok Patel
+	i) K-Means (rust and python code)
+	ii) Matrix Multiplication (rust and python code)
+
+2) Shanay Mehta & Devarsh Patel
+	i) Neural Network (rust and python code)
+	ii) Dot Product (rust and python code)
+
+Error handling, README.md editing and profiling were collectively done.
+
+
