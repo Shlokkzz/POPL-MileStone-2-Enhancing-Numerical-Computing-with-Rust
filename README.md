@@ -4,10 +4,14 @@
 
 ![Python-vs -Rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/7eae0d54-142b-44da-b516-cfeb0957bb7e)
 
-FILES ADD PLS
 * The goal of this project is to optimize numerical and `scientific computing`.  
 * Currently, `Numpy` is widely used for numerical and scientific computing, while Rust is known for its performance, safety, and system-level programming capabilities.   
 * This project brings the advantages of Rust to the data science and scientific computing community while maintaining compatibility with existing Python-based workflows.
+* We have used various Rust vs Python comparisons on the basis of performance and memory management using the files:
+    * [`Matrix Multiplication`](./code-orig/matmul_dim.rs)
+    * [`Neural Network`](./code-orig/n_net.rs)
+    * [`Dot Product`](./code-orig/dot_product.rs)
+    * [`Error Handling`](./code-orig/error_handling.rs)
 
 ## Software architecture
 
