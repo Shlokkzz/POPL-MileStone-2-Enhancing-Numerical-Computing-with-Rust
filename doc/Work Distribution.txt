@@ -8,6 +8,6 @@ The work for the project was distributed as follows:
 	i) Neural Network (rust and python code)
 	ii) Dot Product (rust and python code)
 
-Error handling, README.md editing and profiling were collectively done.
+Error handling, carrying out result analysis, bringing out the POPL aspects in our code, README.md editing and profiling were collectively done.
 
 
