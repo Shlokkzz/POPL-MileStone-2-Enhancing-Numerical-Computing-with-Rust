@@ -167,21 +167,9 @@
 
 ## Results 
 
-* We consider the results of transpilation in wall clock time, memory consumption, and complexity in terms of issues encountered and regularity for potential automation.  
-* We also consider what processes transpiled sources now allow.   
-* Lines of code is not considered a feasible measure because the number of lines is almost the same, with differences being due to the differing formatters of each language.
+We first begin our evaluation by testing the time taken by the code written in rust vs that in python.
 
-The results below are generated using VTune application.  
-## Python:- 
-![python](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/3d0ade3e-e838-42c9-bed3-130ed0174fd1)
-## Rust:-
-![rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/52e40649-7998-41f7-b60d-72fef550d6b1)
-
-
-* In the experiments, the parameters to the algorithm are built-into the library, which reduces reliability of the measurements for both the Python and the transpiled Rust implementations.  
-* Measurements were taken with careful examination of allocations and verification of produced outputs.  
-* After automatic syntax conversion, we used regular expressions extensively to fix remaining errors and library references.  
-* Multiple manual implementations of expressions (< 1 % of all expressions) were required though each was straightforward with output from the Rust compiler.  
+We first test it out for the matrix multiplication code:
 
 ## Graph:-
 ![photo_2023-11-20_00-51-38](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/a3b4f3ce-654b-4a65-bf46-73b238cfa9a2)
@@ -197,6 +185,18 @@ Size | RUST(s) | PYTHON(s)
 500          | 0.31405 | 24.7
 
 In this performance comparison between Rust and Python for processing different data sizes, Rust consistently demonstrates significantly lower execution times across varying data sizes, showcasing its superior efficiency and speed compared to Python for these computational tasks.  
+
+The results below are generated using VTune application.  
+## Python:- 
+![python](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/3d0ade3e-e838-42c9-bed3-130ed0174fd1)
+## Rust:-
+![rust](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/52e40649-7998-41f7-b60d-72fef550d6b1)
+
+
+* In the experiments, the parameters to the algorithm are built-into the library, which reduces reliability of the measurements for both the Python and the transpiled Rust implementations.  
+* Measurements were taken with careful examination of allocations and verification of produced outputs.  
+* After automatic syntax conversion, we used regular expressions extensively to fix remaining errors and library references.  
+* Multiple manual implementations of expressions (< 1 % of all expressions) were required though each was straightforward with output from the Rust compiler.  
 
 ## Potential for future work
 * Using rust’s concurrency features to improve neural network performance.
