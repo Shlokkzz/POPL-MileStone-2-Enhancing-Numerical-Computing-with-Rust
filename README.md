@@ -127,6 +127,7 @@
 * We also consider what processes transpiled sources now allow.   
 * Lines of code is not considered a feasible measure because the number of lines is almost the same, with differences being due to the differing formatters of each language.
 
+The results below are generated using VTune application.  
 ## `PYTHON->`  
 ![python](https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/3d0ade3e-e838-42c9-bed3-130ed0174fd1)
 ## `RUST->`  
