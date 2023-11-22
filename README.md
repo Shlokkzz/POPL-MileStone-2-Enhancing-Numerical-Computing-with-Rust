@@ -18,11 +18,8 @@
 <img width="765" alt="Screenshot 2023-11-20 at 1 52 08 AM" src="https://github.com/Shlokkzz/POPL-MileStone-2-Enhancing-Numerical-Computing-with-Rust/assets/101893296/19b96bb1-9b4c-4533-950d-ff0af53cdb27">
 
 
-
-* Unit Tests: Writing tests for individual components to ensure their functionality.
-* Integration and End-to-End Tests: Verifying the interactions and behaviors between components and the system as a whole.
-
-* Testing component is placed locally and there is no database involved.  
+* We have written codes in both python and rust languages. Our neural network code consists of forward and backward propagation steps within a training loop, measuring training time and evaluating accuracy on a test dataset.
+* We have tested the performance based on time taken to complete execution, accuracy and then we have done profiling for the matmul code to test the interaction of the python and rust codes with the computer hardware. There is no database involved.  
 
 ## How to Compile and Run the project
   ### Python
@@ -65,7 +62,7 @@
   
   4. #### `Run the Compiled Binary`
       * After successful compilation, the binary will be available in the target/debug directory (for development build).
-      * Run the binary by executing target/debug/matmul_dim in the terminal.
+      * Run the binary by executing target/debug/matmul_dim in the terminal by executing the command cargo run.
 
 
 ## POPL Aspects
